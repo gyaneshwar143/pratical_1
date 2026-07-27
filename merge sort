@@ -22,15 +22,12 @@ void merge(int arr[], int left, int mid, int right) {
         }
         k++;
     }
-
-    // Copy remaining elements of L[]
     while (i < n1) {
         arr[k] = L[i];
         i++;
         k++;
     }
 
-    // Copy remaining elements of R[]
     while (j < n2) {
         arr[k] = R[j];
         j++;
@@ -38,7 +35,6 @@ void merge(int arr[], int left, int mid, int right) {
     }
 }
 
-// Merge Sort function
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;
